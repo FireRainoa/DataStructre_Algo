@@ -17,6 +17,7 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     res -> next = NULL;
     res -> val = 0;
     struct ListNode* cur = res;
+    // 进位存储!
     int carry = 0;
     while(l1 != NULL || l2 != NULL || carry != 0) {
         int va1 = (l1 != NULL) ? l1->val : 0;
@@ -28,11 +29,13 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
         newNode -> val = sum % 10;
         newNode -> next = NULL;
         cur->next = newNode;
+        // 当前节点存入数据后一定要移动cur
         cur = cur->next;
 
         if (l1 != NULL) l1 = l1->next;
         if (l2 != NULL) l2 = l2->next;
     }
+    // 因为res头结点是虚拟节点,不存数据,所以应该返回头结点的下一个
     return res->next;
 }
 // @lc code=end
