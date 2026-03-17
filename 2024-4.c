@@ -50,6 +50,8 @@ long long getSum(P* ps, int l) {
 int main() {
     struct product ps[m];
     char name[20];
+    char str[] = "";
+    char *str[]= {"ss", "aa"};
     int num;
     double price;
     for (int i = 0; i < m; i++) {

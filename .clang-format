@@ -1,0 +1,9 @@
+BasedOnStyle: Google
+BraceWrapping:
+  AfterFunction: false
+  AfterIf: false
+  AfterFor: false
+  AfterWhile: false
+  AfterSwitch: false
+IndentWidth: 4
+UseTab: false
