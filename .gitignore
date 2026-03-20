@@ -1,0 +1,13 @@
+.vscode/
+*.o             # 目标文件
+*.a             # 静态库
+*.so            # 动态库
+*.exe           # 可执行文件
+*.out           # 编译输出文件
+2024-4.c
+binarySearch.c
+calcPI.c
+CountFrequency.c
+双向冒泡排序.cpp
+
+
